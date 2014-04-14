@@ -44,7 +44,7 @@ $ini_path = "media.ini";
 $ini_array = parse_ini_file($ini_path);
 $conn = mysql_connect($ini_array["host"],
                       $ini_array["user"],
-                      $ini_array["passwd"]);
+                      '');
 $result = mysql_select_db($ini_array["db"]);
 
 if ($disc_id == "") {
