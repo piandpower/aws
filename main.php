@@ -42,11 +42,6 @@ if ($extant == "") {
 
 $ini_path = "media.ini";
 $ini_array = parse_ini_file($ini_path);
-echo $ini_array['host'];
-echo $ini_array['user'];
-echo $ini_array['passwd'];
-echo "</body></html>";
-exit;
 $conn = mysql_connect($ini_array["host"],
                       $ini_array["user"],
                       $ini_array["passwd"]);
